@@ -60,6 +60,8 @@ a { font-weight: bold; text-decoration: underline; color: black; }
 a:visited { color: black; }
 a:hover { cursor: pointer; text-decoration: none;}
 
+em { font-style: italic; }
+
 div#resume {
     position: relative;
     width: 700px; min-height: 500px;
@@ -83,7 +85,7 @@ h1 {
 p#summary {
     font-family: "Palatino Linotype", "Book Antiqua", serif;
     font-size: 1.8em;
-    font-style: italic;
+    /* font-style: italic; */
     width: 70%;
     color: #666;
 }
@@ -120,6 +122,10 @@ img:hover {
 
 }
 
+dl#open-source dd > a:first-child {
+    font-style: italic; color: #555; font-weight: normal;
+}
+
 dl#web-presence { margin-top: 20px; }
 dl#web-presence dt:after { content: ": "; }
 dl#web-presence dd:not(:last-child):after { content: " ● "; }
@@ -128,13 +134,17 @@ dl#web-presence dd { font-weight: bold;}
 dl#web-presence dt { color: #555; }
 
 dl#work-experience dt, dl#open-source dt { margin-top: 25px; }
-dl#work-experience dt, dl#open-source { font-weight: bold; font-size: 1.1em;}
+dl#work-experience dt, dl#open-source dt { 
+    font-weight: bold; 
+    font-size: 1.2em;
+}
 dl#work-experience dd span.period {
     font-style: italic;
     color: #555;
 }
 
-dl#work-experience dd p {
-    margin-top: 5px;
+dl#work-experience dd p, dl#open-source dd p {
+    margin-top: 10px;
+    line-height: 1.2em;
 }
 
