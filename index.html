@@ -2,13 +2,14 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="http://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet" type="text/css">
+    <title>Manuel Aristarán — Software Developer</title>
   </head>
   <body>
     <div id="resume">
       <h1>Manuel Aristarán</h1>
-      <img src="manuel.jpg" width="200" height="200">
+      <img src="manuel.jpg" width="200" height="200" alt="Manuel Aristaran">
       <p id="summary">I am a developer with more than 15 years of professional experience. I've done big websites, desktop apps, mobile apps and software for embedded platforms.</p>
       <dl id="web-presence">
         <dt>Email</dt>
@@ -27,15 +28,18 @@
         <dt>Tabula</dt>
         <dd>
           <a href="http://github.com/jazzido/tabula">http://github.com/jazzido/tabula</a>
-          <p><em>Tabula</em> is a tool for liberating data tables embedded in PDF files. I started the project in late 2012 and it quickly generated a lot of interest in the data journalism and open data communities. It is now being developed in collaboration with <a href="http://www.propublica.org">ProPublica</a>. Available under the MIT License.</p>
+          <p><em>Tabula</em> is a tool for liberating data tables embedded in PDF files. I started the project in late 2012 and it quickly generated a lot of interest in the data journalism and open data communities. It is now being developed in collaboration with <a href="http://www.propublica.org">ProPublica</a>, <a href="http://blogs.lanacion.com.ar/data/">La Nación DATA</a> and <a href="http://www.mozillaopennews.org/">Knight-Mozilla OpenNews</a>. Available under the MIT License.</p>
         </dd>
         <dt>Gasto Público Bahiense</dt>
         <dd>
           <a href="http://github.com/jazzido/GPB">http://github.com/jazzido/GPB</a>
-          <p>Launched in mid-2010, <a href="http://gastopublicobahiense.org"><em>Gasto Público Bahiense</em></a> scrapes and republishes the expenditure data published by the government of <a href="">Bahía Blanca, Argentina</a>, my hometown. It is one of the first grassroots projects of technology applied to government transparency in Latin America. In 2013, the government of the Buenos Aires province awarded it the annual "<a href="http://www.modernizacion.gba.gov.ar/noticias/529-la-provincia-entrego-los-premios-a-la-innovacion-en-la-gestion-publica">Innovation in Government</a>" prize. Available under a GPLv3 license.</p>
+          <p>Launched in mid-2010, <a href="http://gastopublicobahiense.org"><em>Gasto Público Bahiense</em></a> scrapes and republishes the expenditure data published by the government of <a href="">Bahía Blanca, Argentina</a>, my hometown. It is one of the first grassroots projects of technology applied to government transparency in Latin America. In 2013, the government of the Buenos Aires province awarded it the annual "<a href="http://www.modernizacion.gba.gov.ar/noticias/529-la-provincia-entrego-los-premios-a-la-innovacion-en-la-gestion-publica">Innovation in Government</a>" prize. Available under the GPL version 3 license.</p>
         </dd>
         <dt>PacketDroid</dt>
-        <dd></dd>
+        <dd>
+          <a href="https://github.com/jazzido/packetdroid">https://github.com/jazzido/packetdroid</a>
+          <p>During <a href="#work-experience-satellogic">my stint at Satellogic</a>, I became interested again in ham radio (I've been a licensed radioamateur since age 15). As an excuse for learning the Android platform, I took <a href="http://www.baycom.org/~tom/ham/linux/multimon.html">Thomas Sailer's multimon</a>, wrapped it inside <abbr title="Java Native Interface">JNI</abbr> and coded a simple frontend. It now serves as the <abbr title="Frequency-Shift Keying">FSK</abbr> decoding backend for the <a href="https://github.com/ge0rg/aprsdroid">APRSDroid</a> project. Available under the <abbr title="General Public License">GPL</abbr> version 2.</p>
+        </dd>
       </dl>
 
       <h2>Recent Work History</h2>
@@ -46,10 +50,10 @@
           <p>As one of the eight <a href="http://www.mozillaopennews.org/fellowships/2013meet.html">OpenNews fellows</a> spread across newsrooms worldwide, I'll be working together with the <a href="http://blogs.lanacion.com.ar/data/">data team at La Nación</a> building innovative approaches to news.</p>
         </dd>
 
-        <dt>Software engineer at Satellogic</dt>
+        <dt id="work-experience-satellogic">Software engineer at Satellogic</dt>
         <dd>
           <span class="period">February 2011 — January 2013</span>
-          <p>Satellogic is one the first argentinian aerospace startups. I spent 2 years there, working from the <a href="http://www.invap.com.ar">INVAP</a> compound (in the beautiful town of <a href="http://en.wikipedia.org/wiki/San_Carlos_de_Bariloche">Bariloche, Argentina</a>) as a <em>jack-of-all-trades</em> developer designing and implementing simulation software, writing C code for hardware drivers and building a ground station and ground support software for an upcoming satellite mission.</p>
+          <p>Satellogic is one the first argentinian aerospace startups. I spent 2 years there, working from the <a href="http://www.invap.com.ar">INVAP</a> compound (in the beautiful town of <a href="http://en.wikipedia.org/wiki/San_Carlos_de_Bariloche">Bariloche, Argentina</a>) as a <em>jack-of-all-trades</em> developer designing and implementing simulation software, writing C code for hardware drivers and building a ground station and ground support software for the <a href="http://1.cubebug.org/">CUBEBUG-1</a> satellite, successfully launched on April 26th, 2013.</p>
         </dd>
 
         <dt>Software engineer at Container Consultants and Systems</dt>
@@ -61,16 +65,28 @@
         <dt>Software engineer at Popego</dt>
         <dd>
           <span class="period">October 2007 — April 2009</span>
-          <p>Popego (now merged into <a href="http://grupo42.com">Grupo 42</a>) was an argentinian internet company building AI and innovative UIs.</p>
+          <p>Popego (now merged into <a href="http://grupo42.com">Grupo 42</a>) was an argentinian internet company building <abbr title="Artificial Intelligence">AI</abbr> and innovative <abbr title="User Interface">UI</abbr>s.</p>
           <p>I was the company's first hire in 2007 and worked with them until 2009. I wore a lot of hats there: Python and frontend development, sysadmin and helped build the hosting cluster on Amazon EC2. I even did some product management!</p>
         </dd>
         <dt>Developer at <a href="http://www.area17.com/">Area 17</a></dt>
         <dd>
           <span class="period">August 2006 to August 2007</span>
-          <p>I was flown to Paris in August 2006 to work on the relaunch of Madame Figaro's (leading women's magazine in France) website as a Ruby on Rails (version 0.13!) developer. We built a custom CMS from the ground up, that remained in production until mid-2010.</p>
+          <p>I was flown to Paris in August 2006 to work as a Ruby on Rails (version 0.13!) developer on the relaunch of Madame Figaro's (leading women's magazine in France) website. We built a custom <abbr title="Content Management System">CMS</abbr> from the ground up. It remained in production until mid-2010.</p>
           <p>From April 2007 until August 2007, I worked as the lead developer for <a href="http://www.design21sdn.com/">Design 21 Social Design Network</a>, a website commissioned by <a href="http://www.felissimo.com/designhouse/">Felissimo Corporation</a> in partnership with UNESCO.</p>
         </dd>
       </dl>
     </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', "UA-68057-5"]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+        })();
+
+    </script>
   </body>
 </html>
