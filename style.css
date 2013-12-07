@@ -83,14 +83,6 @@ h1 {
     /* left: -60px; */
 }
 
-p#summary {
-    font-family: "Palatino Linotype", "Book Antiqua", serif;
-    font-size: 1.8em;
-    /* font-style: italic; */
-    width: 70%;
-    color: #666;
-}
-
 h2 { 
     font-family: 'Playfair Display', serif;
     font-size: 2em;
@@ -98,7 +90,20 @@ h2 {
     margin-top: 15px;
 }
 
+h3 {
+  font-weight: bold;
+  
+  margin-top: 10px; margin-bottom: 10px;
+  line-height: 1.2em;
+}
 
+p#summary {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 1.8em;
+    /* font-style: italic; */
+    width: 70%;
+    color: #666;
+}
 
 img {
     border: 5px solid #fbfbfb;
@@ -143,9 +148,20 @@ dl#work-experience dd span.period {
     font-style: italic;
     color: #555;
 }
-
 dl#work-experience dd p, dl#open-source dd p {
     margin-top: 10px;
     line-height: 1.2em;
 }
 
+dt#work-experience-opennews + dd ul {
+  list-style-type: square;
+  margin-left: 2em;
+}
+
+dt#work-experience-opennews + dd ul li a {
+  font-weight: normal;
+}
+
+dt#work-experience-opennews + dd ul li strong a {
+  font-weight: bold;
+}
