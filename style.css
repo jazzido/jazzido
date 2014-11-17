@@ -60,7 +60,7 @@ a { font-weight: bold; text-decoration: underline; color: black; }
 a:visited { color: black; }
 a:hover { cursor: pointer; text-decoration: none;}
 
-em { font-style: italic; }
+em,i { font-style: italic; }
 
 div#resume {
     position: relative;
@@ -148,7 +148,9 @@ dl#work-experience dd span.period {
     font-style: italic;
     color: #555;
 }
-dl#work-experience dd p, dl#open-source dd p {
+dl#work-experience dd p, 
+dl#open-source dd p,
+h2#why-jazzido + p, h2#why-jazzido + p + p {
     margin-top: 10px;
     line-height: 1.2em;
 }
