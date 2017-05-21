@@ -1,0 +1,148 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+@import "reset.scss";
+
+$main-color: rgb(204,0,0);
+$text-color: white;
+$headline-font: 'Fjalla One', sans-serif;
+$text-font: 'Nunito', sans-serif;
+$container-width: 90%;
+$container-padding: 0 2em 0 2em;
+
+* {
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: $main-color;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+
+    color: $text-color;
+
+    div#links {
+        width: $container-width;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        $header-name-width: 85%;
+
+        h1 {
+            font-size: 5em;
+            font-family: $headline-font;
+            width: $header-name-width;
+        }
+
+        ul {
+            align-self: center;
+            width: (100% - $header-name-width);
+            justify-content: space-between;
+            display: flex;
+            * {
+                color: $text-color;
+            }
+        }
+    }
+
+    div#hero-text {
+        background-color: $text-color;
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        p {
+            width: $container-width;
+            margin: 0 auto;
+            color: black;
+            font-family: $text-font;
+            font-size: 1.5em;
+            text-align: justify;
+        }
+        
+    }
+
+
+
+    section {
+        $line-height: 5em;
+        width: $container-width;
+        margin: 0 auto;
+
+        margin-top: 30px;
+        position:relative;
+        padding-left: $line-height;
+
+        header {
+            display:block;
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            width: $line-height; /* line-height of .wrapper div:first-child span */
+            overflow:hidden;
+            white-space:nowrap;
+
+            h3 {
+                transform-origin:0 50%;
+                transform:rotate(-90deg) translate(-50%, ($line-height/1.8));
+                position:absolute;
+                top:0;
+                bottom:0;
+                height: $line-height; /* line-height of .wrapper div:first-child span */
+                margin:auto;
+                font-family: $headline-font;
+                font-weight:bold;
+                font-size: ($line-height/2);
+                line-height: ($line-height/2); /* Copy to other locations */
+            }
+        }
+
+        article {
+            display:inline-block;
+            width:80%;
+            padding:1em 1em 1em 0;
+            margin-left: ($line-height/2);
+            vertical-align:middle;
+            box-sizing:border-box;
+        }
+        
+        dl {
+            dt {
+
+                &:hover {
+                    background-color: $text-color;
+                    color: $main-color;
+                    cursor: pointer;
+                }
+                font-family: $text-font;
+                font-size: 2em;
+            }
+
+            dd {
+                
+                
+            }
+
+        }
+    }
+
+}
+
+p {
+    color: white;
+}
