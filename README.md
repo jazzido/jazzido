@@ -1,4 +1,4 @@
-My name is **Manuel Aristarán**, and I'm a software engineer with more than 20 years of industry experience. 
+I'm a software engineer with more than 20 years of industry experience. 
 
 I also play instruments, and sometimes I make videos that I post to [Instagram](https://www.instagram.com/aristamanu/) and [YouTube](https://www.youtube.com/user/jazzido). 
 
